@@ -19,7 +19,6 @@ import java.io.File;
 
 @Configuration
 @ComponentScan({"com.perfect.jinbao.service", "com.perfect.jinbao.aop"})
-@ImportResource(value = {"classpath:spring-jpa.xml"})
 @EnableScheduling
 @EnableAspectJAutoProxy
 public class RootConfig {

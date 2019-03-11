@@ -30,13 +30,10 @@ public class SdkServiceImpl implements SdkService {
     @SuppressWarnings("Duplicates")
     private void Init() {
         BaseConfigModel configModel = new BaseConfigModel();
-
         configModel.setAppKey("3ce78749d0d74b3b8f03e814b408d704");
         configModel.setAppSecret("724f696a32ca6caef193948356aab82093b16812");
         configModel.setDefaultPid("8428632_55423539");
         ddkService = new DdkService(configModel);
-
-
     }
 
     @Override

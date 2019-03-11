@@ -55,7 +55,7 @@ public class MVCConfig extends WebMvcConfigurerAdapter {
         //spring模板解析器
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(this.applicationContext);
-        templateResolver.setPrefix("/views/");
+        templateResolver.setPrefix("/view/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding("UTF-8");

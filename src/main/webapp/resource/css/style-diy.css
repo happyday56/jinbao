@@ -1,0 +1,91 @@
+/*
+ * Copyright (C) 2018 guomw.Inc. All rights reserved.
+ * 项目名称： mysite
+ * 文件名称： style-diy.css
+ * Date：18-9-18 上午9:34
+ * Author: guomw
+ */
+body, html {
+    /*min-width: 980px;*/
+}
+
+.dd-item {
+    position: relative !important;
+}
+
+.dd-item .btn-a-items {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 10px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.btn-right {
+    text-align: right;
+    width: 180px;
+}
+
+.btn-a-items .btn-content span {
+    min-width: 100px;
+    display: inline-block;
+    line-height: 20px;
+    min-height: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.btn-a-items .header {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-a-items a {
+    line-height: 20px;
+    min-height: 20px;
+}
+
+.nav-left {
+    background: #293846;
+    padding-left: 26px;
+}
+
+.nav-child {
+    padding-left: 15px !important;
+}
+
+.nav-left > li.active {
+    border-left: none !important;
+}
+
+.nav-left > li > a {
+    padding: 10px 15px 10px 0px !important;
+}
+
+.nav-left .fa, .dd-item .fa {
+    width: 12px;
+    height: 13px;
+    text-align: center;
+}
+
+.pagination {
+    margin: unset !important;
+}
+
+.modal-backdrop {
+    display: none !important;
+}
+
+.control-label-first {
+    height: 67px;
+    line-height: 80px;
+}
+
+#content-main {
+    height: calc(100% - 80px) !important;
+}
+
+.table-bordered > tbody > tr > th {
+    background-color: #F5F5F6 !important;
+}

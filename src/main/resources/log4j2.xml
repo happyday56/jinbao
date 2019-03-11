@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="INFO" debug="true">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %p [%c] %m%n"/>
+        </Console>
+        <RollingFile name="ServerDailyRollingFile" filename="${sys:catalina.home}/logs/jinbao/app.log"
+                     filePattern="${sys:catalina.home}/logs/jinbao/$${date:yyyy-MM}/app-%d{yyyy-MM-dd-HH}-%i.log">
+            <PatternLayout>
+                <pattern>%d - [%p] [%c] %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="24" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="ServerDailyRollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
